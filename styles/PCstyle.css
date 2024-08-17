@@ -1,0 +1,226 @@
+header {
+  position: sticky;
+  top: -120px;
+  z-index: 100;
+  animation: headerAnim linear forwards;
+  animation-timeline: scroll();
+  animation-range-start: 60vh;
+  animation-range-end: 80vh;
+}
+
+@keyframes headerAnim {
+  to {
+    top: 0px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    background-color: #1a48709b;
+    backdrop-filter: blur(7px);
+  }
+}
+
+h2 {
+  color: var(--txtColor1);
+  margin: 2rem auto;
+  font-size: 30px;
+  margin-bottom: 10rem;
+}
+h3 {
+  margin: 2rem auto;
+  font-size: 20px;
+}
+span {
+  color: var(--txtColor2);
+}
+
+/* ************ About me */
+#aboutMe {
+  height: 70vh;
+}
+#aboutMe .about {
+  width: 80%;
+
+  margin: 0 auto;
+  display: flex;
+}
+#aboutMe .about .introduction {
+  width: 45%;
+  margin: 0 auto;
+  border-radius: 30px;
+  box-shadow: 3px 3px 1px 5px #1a4870;
+  button {
+    margin: 2rem 0;
+    margin-left: calc(100% - 165px);
+  }
+}
+
+#aboutMe .about .skills {
+  margin: 0 auto;
+
+  width: 45%;
+  border-radius: 30px;
+  box-shadow: 3px 3px 1px 5px #1a4870;
+  display: flex;
+}
+#aboutMe .about .skills .skill1,
+.skill2,
+.skill3 {
+  width: 200px;
+}
+#aboutMe .about .skills .ss {
+  display: flex;
+  flex-wrap: wrap;
+  h4 {
+    background-color: #1a4870;
+    color: var(--bgContent);
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+}
+/* end about */
+
+/* *************************** Work **************** */
+
+#myWork {
+  padding: 5rem;
+}
+#myWork .work {
+  display: flex;
+}
+#myWork .work .completed,
+.clintes,
+.experience {
+  width: 26%;
+  height: 35vh;
+  margin: 0 auto;
+  box-shadow: 3px 3px 1px 5px #1a4870;
+
+  border-radius: 30px;
+  padding: 1rem;
+  img {
+    display: block;
+    width: 20%;
+    height: 25%;
+    margin: 0 auto;
+  }
+  p {
+    width: fit-content;
+    margin: auto;
+    color: var(--txtColor1);
+  }
+}
+/* end od work */
+
+/**********************                 contact me           *******************************/
+
+#Mycontact {
+  margin-bottom: 10rem;
+  h2 {
+    margin: 2rem auto;
+    font-size: 30px;
+    margin-bottom: 0rem;
+  }
+  h3 {
+    margin: 2rem auto;
+    font-size: 20px;
+    margin-bottom: 10rem;
+  }
+}
+
+#Mycontact .contact {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#Mycontact .contact .findMe,
+.contactMy {
+  width: 48%;
+  border-radius: 20px;
+  height: 40dvh;
+}
+
+#Mycontact .contact .findMe {
+  background-color: var(--bgHome);
+  align-content: center;
+  h2 {
+    margin-bottom: 3rem;
+  }
+  p {
+    width: fit-content;
+  }
+  img {
+    width: 5%;
+    height: 10%;
+    display: inline;
+    margin-right: 1rem;
+  }
+  .fme {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+
+    width: 60%;
+  }
+}
+#Mycontact .contact .contactMy {
+  button[id="send"] {
+    margin: 1rem;
+    margin-left: 8rem;
+  }
+}
+
+.contactMe {
+  display: grid;
+  grid-auto-columns: 180px;
+  grid-auto-rows: 40px;
+  grid-template-areas:
+    "fn ea"
+    "m es"
+    "ms ms"
+    "ms ms";
+  gap: 1rem;
+  width: max-content;
+  margin: 0 auto;
+}
+#fullName {
+  grid-area: fn;
+}
+#emailAdress {
+  grid-area: ea;
+}
+#mobile {
+  grid-area: m;
+}
+#emailSubject {
+  grid-area: es;
+}
+#massage {
+  grid-area: ms;
+}
+
+.contactMe {
+  textarea,
+  input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgButton);
+    color: var(--txtColor2);
+    border-radius: 30px;
+    border: none;
+  }
+}
+
+/* #Mycontact .contact .findMe,
+.contactMy { */
+/* Media */
+
+@media (width<1200px) {
+  main {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+}
