@@ -68,8 +68,8 @@ AboutmeBTN.addEventListener("click", Aboutme);
 /****
  *   open and close menu
  */
-let openMenu = document.getElementById("menu"),
-  closeMenu = document.getElementById("close");
+let oopenMenu = document.getElementById("menu"),
+  ccloseMenu = document.getElementById("close");
 
 function OpenMenu() {
   document.getElementById("MenuContent").style.display = "block";
@@ -79,8 +79,8 @@ function CloseMenu() {
   document.getElementById("MenuContent").style.display = "none";
   document.getElementById("menuBg").style.display = "none";
 }
-openMenu.addEventListener("click", OpenMenu);
-closeMenu.addEventListener("click", CloseMenu);
+oopenMenu.addEventListener("click", OpenMenu);
+ccloseMenu.addEventListener("click", CloseMenu);
 
 /**
  * menu buttons

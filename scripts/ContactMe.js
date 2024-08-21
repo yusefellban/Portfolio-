@@ -10,9 +10,8 @@ function validateName() {
       "*Error: The name cannot be a number.";
     document.getElementById("fullName").style.border = "2px solid red";
   } else {
-      document.getElementById("errorMassage").innerText = "";
-  document.getElementById("fullName").style.border = "none";
-      
+    document.getElementById("errorMassage").innerText = "";
+    document.getElementById("fullName").style.border = "none";
   }
 }
 /**
@@ -29,9 +28,8 @@ function validateEmail() {
       " * Error: Please enter a valid email address.";
     document.getElementById("emailAdress").style.border = "2px solid red";
   } else {
-      document.getElementById("errorEmail").innerText = "";
-  document.getElementById("emailAdress").style.border = "none";
-      
+    document.getElementById("errorEmail").innerText = "";
+    document.getElementById("emailAdress").style.border = "none";
   }
 }
 
@@ -46,9 +44,8 @@ function validateMobile() {
     document.getElementById("errorMobile").innerText = " * number not Accepted";
     document.getElementById("mobile").style.border = "2px solid red";
   } else {
-      document.getElementById("errorMobile").innerText = " ";
-  document.getElementById("mobile").style.border = "none";
-      
+    document.getElementById("errorMobile").innerText = " ";
+    document.getElementById("mobile").style.border = "none";
   }
 }
 
@@ -64,9 +61,8 @@ function validateSubject() {
       "*Error: The subject cannot be a number.";
     document.getElementById("emailSubject").style.border = "2px solid red";
   } else {
-      document.getElementById("emailSubject").innerText = "";
-  document.getElementById("emailSubject").style.border = "none";
-      
+    document.getElementById("emailSubject").innerText = "";
+    document.getElementById("emailSubject").style.border = "none";
   }
 }
 function sendEmail() {
@@ -87,6 +83,7 @@ function reset() {
   document.getElementById("fullName").style.border = "none";
 }
 document.getElementById("send").addEventListener("click", sendEmail);
+
 document.getElementById("rest").addEventListener("click", reset);
 
 // d
@@ -94,6 +91,7 @@ document.getElementById("fullName").addEventListener("input", validateName);
 
 document.getElementById("emailAdress").addEventListener("input", validateEmail);
 document.getElementById("mobile").addEventListener("input", validateMobile);
+
 document
   .getElementById("emailSubject")
   .addEventListener("input", validateSubject);
