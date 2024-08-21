@@ -2,20 +2,19 @@ header {
   height: 12.5dvh;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
-  z-index: 100;
-  /* background-color: aqua; */
+  padding: 0rem 0.5rem;
+  align-items: center;
+  z-index: 90;
 }
 .logo {
-  height: 100%;
-  width: 210px;
+  height: 70%;
+  width: 165px;
 }
 
 /* Lunks */
 
 .Links {
   display: none;
-  /* background-color: aliceblue; */
   ul {
     display: flex;
   margin-right: 5rem;
@@ -33,8 +32,10 @@ header {
 
 /* ************Menue****** */
 #menu {
-  height: 100%;
-  width: 60px;
+  height: 70%;
+  width: 50px;
+
+
   img {
     height: 80%;
     width: 80%;
@@ -49,7 +50,7 @@ header {
   background-color: var(--txtColor1);
   /* opacity: 60%; */
   height: 100dvh;
-  width: 70%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 30%;
@@ -70,6 +71,7 @@ header {
   background-color: var(--txtColor1);
   opacity: 55%;
   display: none;
+  z-index: 99;
 }
 
 #MenuContent {
@@ -99,7 +101,7 @@ header {
 }
 @keyframes menuAnimation {
   from {
-    transform: translateX(300px);
+    transform: translateX(200px);
   }
   to {
     transform: translateX(100px);

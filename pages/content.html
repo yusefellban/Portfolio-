@@ -35,11 +35,30 @@
     </header>
     <!-- end Header -->
 
+    <!-- Menue Content -->
+    <div id="MenuContent">
+      <div id="close">
+        <img src="../imges/close.png" alt="" />
+      </div>
+
+      <div class="logo">
+        <a href="../index.html"> <img src="../imges/logo.png" alt="" /></a>
+      </div>
+      <a href="../index.html"> <h2>Home</h2></a>
+      <h2 id="aboutBTN">Service</h2>
+      <h2 id="work">Work</h2>
+      <a href="#footer"> <h2 id="btnContact">Contact</h2></a>
+      <h2 id="btnEducation">Education</h2>
+    </div>
+    <div id="menuBg"></div>
+    <!-- end of menu content -->
+
     <!--Main  -->
     <main>
+      <!-- main head -->
       <div class="head">
         <h2>Why hire me</h2>
-        <p align="center">
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
           quidem?
         </p>
@@ -50,6 +69,8 @@
           <button id="Skills">Skills</button>
         </div>
       </div>
+      <!-- end main hed -->
+
       <!-- Skills Section -->
       <section id="skillsSection">
         <h2><span>My </span>Skills</h2>
@@ -93,8 +114,8 @@
       <!-- About ME Section -->
       <section id="aboutMe">
         <div class="about">
-          <h2 id="fmm">Full <span>stack </span>developer</h2>
-          <p align="center">
+          <h2 id="aboutME">Full <span>stack </span>developer</h2>
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             possimus, illo laborum quae voluptate repellendus deserunt pariatur
             cumque. Vitae quas totam et beatae dolorem perspiciatis enim
@@ -109,7 +130,7 @@
                 <div class="cirule"></div>
                 <h4>Web Design</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 voluptatum quam quia neque ipsa? Eius,
               </p>
@@ -121,7 +142,7 @@
                 <div class="cirule"></div>
                 <h4>Backend Development</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 voluptatum quam quia neque ipsa? Eius,
               </p>
@@ -133,7 +154,7 @@
                 <div class="cirule"></div>
                 <h4>Frontend Development</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 voluptatum quam quia neque ipsa? Eius,
               </p>
@@ -145,14 +166,14 @@
                 <div class="cirule"></div>
                 <h4>UI/UX Development</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
                 voluptatum quam quia neque ipsa? Eius,
               </p>
               <button>Learn More</button>
             </div>
           </div>
-
+          <!-- end my service -->
           <!-- contact me -->
           <h2><span>Contact </span> Me!</h2>
           <div class="contactMe">
@@ -193,16 +214,21 @@
           <h6 id="errorSubject"></h6>
           <button id="send">Send</button>
           <button id="rest">Reset</button>
+        
         </div>
+        <!--end contact me  -->
+
+        <!--script to handle the contact operations  -->
+        <script src="../scripts/ContactMe.js"></script>
       </section>
-      <script src="../scripts/ContactMe.js"></script>
+
       <!--End of About me  -->
 
       <!-- Education -->
       <section id="myEducation">
         <div class="education">
           <h2>My <span>Education</span></h2>
-          <p align="center">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
             perspiciatis officia ipsa, expedita itaque similique eaque
             repudiandae doloremque voluptatum vitae neque explicabo aliquam rem
@@ -217,7 +243,7 @@
                 <div class="cirule"></div>
                 <h4>Delta Technological University</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 similique eos aliquid distinctio, quis vitae saepe vel totam
                 sapiente dicta, minima magni
@@ -230,7 +256,7 @@
                 <div class="cirule"></div>
                 <h4>ITI Summer Trraning</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 similique eos aliquid distinctio, quis vitae saepe vel totam
                 sapiente dicta, minima magni
@@ -243,7 +269,7 @@
                 <div class="cirule"></div>
                 <h4>online Courses</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 similique eos aliquid distinctio, quis vitae saepe vel totam
                 sapiente dicta, minima magni
@@ -256,7 +282,7 @@
                 <div class="cirule"></div>
                 <h4>online Courses</h4>
               </div>
-              <p align="center">
+              <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
                 similique eos aliquid distinctio, quis vitae saepe vel totam
                 sapiente dicta, minima magni
@@ -267,11 +293,12 @@
       </section>
 
       <!-- End of Education -->
+
       <!-- Me Experience -->
       <section id="myExperience">
         <div class="experience">
           <h2><span>Last</span> Projects</h2>
-          <p align="center">
+          <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
             laudantium ducimus quasi laborum officiis et cum sit! Placeat
             dolorum natus, accusamus aliquam, eveniet et eius veniam repudiandae
@@ -321,14 +348,14 @@
     <!-- Main -->
 
     <!-- Footer -->
-    <footer id="mm">
+    <footer id="footer">
       <div class="footer">
         <h2>Yousef Ellban</h2>
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li id="Fabout"><a href="#fmm">About me</a></li>
+          <li id="Fabout"><a href="#aboutME">About me</a></li>
           <li id="Fprojects">Projects</li>
-          <li id="Fcontct"><a href="#mm">Contact</a></li>
+          <li id="Fcontct"><a href="#footer">Contact</a></li>
         </ul>
         <ul>
           <li>
@@ -373,24 +400,6 @@
       </div>
     </footer>
     <!-- end footer -->
-    <!-- Menue Content -->
-    <div id="MenuContent">
-      <div id="close">
-        <img src="../imges/close.png" alt="" />
-      </div>
-
-      <div class="logo">
-        <a href="../index.html"> <img src="../imges/logo.png" alt="" /></a>
-      </div>
-      <a href="../index.html"> <h2>Home</h2></a>
-      <h2 id="aboutBTN">Service</h2>
-      <h2 id="work">Work</h2>
-      <a href="#mm"> <h2 id="btnContact">Contact</h2></a>
-      <h2 id="btnEducation">Education</h2>
-    </div>
-    <div id="menuBg"></div>
-
-    <!-- end of menu content -->
 
     <script src="../scripts/content.js"></script>
   </body>

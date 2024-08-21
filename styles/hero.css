@@ -2,13 +2,7 @@ body {
   background-color: var(--bgHome);
 }
 .hero {
-  p {
-    width: 370px;
-    margin: 0 auto;
-    margin-top: 2rem;
-  }
 
-  
 }
 .hero .me {
   width: 300px;
@@ -18,7 +12,7 @@ body {
   animation-duration: 0.6s;
   animation-timing-function: linear;
   /* animation-delay: -1s; */
-  animation-fill-mode: both
+  animation-fill-mode: both;
 }
 
 @keyframes boxAnim {
@@ -31,62 +25,74 @@ body {
   }
 }
 
-
-.hero .content {
-  width: 230px;
+.hero .HeroContent {
+  width: 310px;
   margin: auto;
 }
-.hero .content h3 {
-  margin-left: 3.5rem;
+
+.hero .HeroContent p {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+ 
+}
+.hero .HeroContent h3 {
   margin-bottom: 1rem;
+ 
 }
-.hero .content h3 + h1 {
-  margin-left: 3rem;
+.hero .HeroContent h3 + h1 {
+  margin: 0 auto;
 }
-.hero .content h3 + h1 + h1 {
-  margin-left: 1rem;
+.hero .HeroContent h3 + h1 + h1 {
+  margin: 0 auto;
+
   color: var(--txtColor1);
 }
 
 .hero .heroButtons {
-  width: 330px;
-  margin: 0 auto;
-  margin-top: 1rem;
-  /* background-color: black; */
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  a {
+    margin: 0 auto;
+    width: 60%;
+  }
+  button {
+    width: 150px;
+    margin: 0 auto;
+  }
 }
 
-/*  Hero footer */
+/*  Hero Icons */
 
-.heroFooter {
-  /* height: 30dvh; */
+.heroIcons {
   display: flex;
-  /* flex-wrap: wrap; */
+
   margin: 0 auto;
   width: 250px;
-  /* margin-top: 1.5rem; */
 }
-.heroFooter .icon {
+.heroIcons .icon {
   a {
     font-size: 30px;
   }
   margin: 1rem;
 
-          animation-name: boxAnim;
+  animation-name: boxAnim;
   animation-duration: 0.6s;
   animation-timing-function: linear;
-  animation-fill-mode: both
+  animation-fill-mode: both;
 }
-.heroFooter .icon:nth-of-type(1){
-   animation-delay: 0.3s;
+.heroIcons .icon:nth-of-type(1) {
+  animation-delay: 0.3s;
 }
-.heroFooter .icon:nth-of-type(2){
-   animation-delay: 0.9s;
+.heroIcons .icon:nth-of-type(2) {
+  animation-delay: 0.9s;
 }
-.heroFooter .icon:nth-of-type(3){
-   animation-delay: 1.5s;
+.heroIcons .icon:nth-of-type(3) {
+  animation-delay: 1.5s;
 }
-.heroFooter .icon:nth-of-type(4){
-   animation-delay: 2.1s;
+.heroIcons .icon:nth-of-type(4) {
+  animation-delay: 2.1s;
 }
 
 /*************************         Media       ************/
@@ -98,7 +104,7 @@ body {
   .hero {
     display: flex;
     margin-top: 4rem;
-    /* background-color: antiquewhite; */
+
     height: 75dvh;
   }
   .hero .HeroContent {
@@ -106,7 +112,7 @@ body {
     margin: 0 auto;
     height: 60dvh;
     align-content: center;
-    h3{
+    h3 {
       margin: 0;
     }
   }
@@ -115,8 +121,6 @@ body {
     order: 2;
     height: 45dvh;
     width: 350px;
-
-    /* background-color: aquamarine; */
   }
 
   .me {
@@ -128,7 +132,7 @@ body {
     }
   }
 
-  .heroFooter {
+  .heroIcons {
     margin-top: 3rem;
     margin-left: 2rem;
   }
