@@ -1,10 +1,10 @@
 footer {
   background-color: var(--txtColor1);
   margin-top: 2rem;
-  padding: 2rem;
+  padding: 1rem 0rem;
 }
 footer .footer {
-  width: 300px;
+  width: 285px;
   margin: 0 auto;
   h2 {
     color: aliceblue;
@@ -29,4 +29,11 @@ footer .footer {
   i {
     font-size: 30px;
   }
+  hr {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+footer .footer .footerIcons {
+  width: 70%;
 }
