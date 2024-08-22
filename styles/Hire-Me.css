@@ -89,8 +89,9 @@ span {
 
 /*********************************** Slills Section *************/
 #skillsSection .skills {
-  width: 320px;
+  width: 290px;
   margin: 0 auto;
+
 }
 .skills {
   background-color: var(--bgHome);
@@ -102,6 +103,7 @@ span {
   grid-auto-rows: 130px;
   place-content: center;
   grid-template-areas:
+  ". ."
     ". ."
     "s1 s2"
     "s3 s4"
@@ -170,14 +172,13 @@ span {
 /**********************************    About me section  *************************************/
 
 #aboutMe .about {
-  width: 320px;
+  width: 300px;
   margin: 0 auto;
-  background-color: aliceblue;
 }
 
 /* **********************************************      Service section      ********************* */
 .myService {
-  width: 300px;
+  width: 290px;
   height: 40dvh;
   background-color: var(--bgHome);
   border-radius: 20px;
@@ -230,7 +231,7 @@ span {
 /*** contact me** */
 .contactMe {
   display: grid;
-  grid-auto-columns: 150px;
+  grid-auto-columns: 140px;
   grid-auto-rows: 40px;
   grid-template-areas:
     "fn ea"
@@ -275,8 +276,9 @@ span {
 
 /* *****************************      Education       ********************************** */
 .education {
-  width: 320px;
+  width: 290px;
   margin: 0 auto;
+
 }
 
 .educationCards {
@@ -342,8 +344,9 @@ span {
 
 /* *******************         Expeirence          ********************** */
 .experience {
-  width: 320px;
+  width: 290px;
   margin: 0 auto;
+
 }
 
 .experienceCards {
@@ -353,7 +356,7 @@ span {
   border-radius: 30px;
   background-color: var(--bgHome);
   display: grid;
-  grid-auto-columns: 120px;
+  grid-auto-columns: 110px;
   grid-auto-rows: 200px;
   grid-template-areas:
     ". ."
