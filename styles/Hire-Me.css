@@ -219,9 +219,8 @@ span {
     box-shadow: 3px 3px 3px 3px black;
   }
   h4 {
-    font-size: 16px;
-    width: 188px;
-    background-color: antiquewhite;
+    font-size: 15px;
+    width: 188.8px;
   }
 }
 #aboutMe .services .button {
