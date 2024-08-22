@@ -4,31 +4,29 @@ footer {
   padding: 2rem;
 }
 footer .footer {
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
-  h2{
-
+  h2 {
+    color: aliceblue;
     width: max-content;
     margin: 0 auto;
   }
   ul {
     display: flex;
 
-    width: max-content;
     margin: 0 auto;
     li {
-      margin: 1rem;
+      margin: 0.6rem;
     }
   }
-  span{
+  span {
     color: antiquewhite;
   }
-  p{
+  p {
     width: max-content;
     margin: 1rem auto;
   }
-    i{
+  i {
     font-size: 30px;
-  } 
+  }
 }
-

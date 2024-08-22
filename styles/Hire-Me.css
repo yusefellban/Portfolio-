@@ -1,0 +1,460 @@
+header {
+  position: sticky;
+  top: -120px;
+  z-index: 100;
+  animation: headerAnim linear forwards;
+  animation-timeline: scroll();
+  animation-range-start: 80vh;
+  animation-range-end: 80vh;
+}
+
+@keyframes headerAnim {
+  to {
+    top: 0px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: #1a48709b;
+    backdrop-filter: blur(7px);
+  }
+}
+
+body {
+  background-color: var(--bgContent);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+h2 {
+  color: var(--txtColor1);
+  margin: 2rem auto;
+  font-size: 25px;
+}
+span {
+  color: var(--txtColor2);
+}
+/* end Global */
+.head {
+  width: 300px;
+  margin: 1rem auto;
+}
+
+.head h2 {
+  margin: 1rem auto;
+  font-size: 25px;
+}
+
+.head button {
+  width: 210px;
+  margin: 0.5rem auto;
+  height: 6vh;
+}
+.head button:hover {
+  background-color: var(--bgHome);
+}
+
+.head .contentButtons {
+  width: min-content;
+  margin: 1rem auto;
+}
+/* End Globals */
+
+/* make Sections Disable */
+#skillsSection {
+  display: none;
+}
+/* #aboutMe{
+  display: none;
+} */
+#myEducation {
+  display: none;
+}
+#myExperience {
+  display: none;
+}
+
+/*********************************** Slills Section *************/
+#skillsSection .skills {
+  width: 320px;
+  margin: 0 auto;
+}
+.skills {
+  background-color: var(--bgHome);
+  height: 50vh;
+  border-radius: 20px;
+  overflow-y: scroll;
+  display: grid;
+  grid-auto-columns: 125px;
+  grid-auto-rows: 130px;
+  place-content: center;
+  grid-template-areas:
+    ". ."
+    "s1 s2"
+    "s3 s4"
+    "s5 s6"
+    "s7 s8";
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.skills .skillCard {
+  background-color: var(--bgButton);
+  border-radius: 30px;
+  padding: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 4px 4px 5px;
+  img {
+    height: 80%;
+  }
+  h4 {
+    margin: 0 auto;
+    width: max-content;
+    font-size: 15px;
+    color: wheat;
+  }
+}
+.skillCard:hover > img {
+  height: 95%;
+  width: 110%;
+}
+.skill1 {
+  grid-area: s1;
+}
+
+.skill2 {
+  grid-area: s2;
+}
+
+.skill3 {
+  grid-area: s3;
+}
+
+.skill4 {
+  grid-area: s4;
+}
+
+.skill5 {
+  grid-area: s5;
+}
+
+.skill6 {
+  grid-area: s6;
+}
+
+.skill7 {
+  grid-area: s7;
+  img {
+    border-radius: 50px;
+  }
+}
+
+.skill8 {
+  grid-area: s8;
+}
+/* End of Skills */
+
+/**********************************    About me section  *************************************/
+
+#aboutMe .about {
+  width: 320px;
+  margin: 0 auto;
+  background-color: aliceblue;
+}
+
+/* **********************************************      Service section      ********************* */
+.myService {
+  width: 300px;
+  height: 40dvh;
+  background-color: var(--bgHome);
+  border-radius: 20px;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /*Ensures content stays in one line */
+  align-content: center;
+  /* scrollbar-width: auto; */
+  display: flex;
+  /* flex-wrap: nowrap; */
+  margin: 0 auto;
+}
+#aboutMe .services {
+  background-color: var(--bgButton);
+  /* width: 20px; */
+  margin: 1rem;
+  height: 34dvh;
+  display: inline-block;
+  border-radius: 30px;
+  box-shadow: 2px 4px 4px 5px;
+  padding: 1rem;
+}
+#aboutMe .services {
+  white-space: wrap;
+  width: 85%;
+  img {
+    height: 25%;
+    width: 20%;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    color: var(--txtColor2);
+    margin: 0.5rem auto;
+  }
+
+  button:hover {
+    color: var(--bgButton);
+    background-color: var(--bgContent);
+    transition: 0.7s;
+    box-shadow: 3px 3px 3px 3px;
+  }
+  h4 {
+    font-size: 17px;
+    width: 180px;
+  }
+}
+
+/***** end of service*** */
+
+/*** contact me** */
+.contactMe {
+  display: grid;
+  grid-auto-columns: 150px;
+  grid-auto-rows: 40px;
+  grid-template-areas:
+    "fn ea"
+    "m es"
+    "ms ms"
+    "ms ms";
+  gap: 1rem;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+#fullName {
+  grid-area: fn;
+}
+#emailAdress {
+  grid-area: ea;
+}
+#mobile {
+  grid-area: m;
+}
+#emailSubject {
+  grid-area: es;
+}
+#massage {
+  grid-area: ms;
+}
+
+.contactMe {
+  textarea,
+  input {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgButton);
+    color: var(--txtColor2);
+    border-radius: 30px;
+    border: none;
+  }
+}
+/* end of contact me */
+
+/*End of About me  */
+
+/* *****************************      Education       ********************************** */
+.education {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.educationCards {
+  height: 60dvh;
+  width: 95%;
+  margin: 1rem auto;
+  border-radius: 30px;
+  background-color: var(--bgHome);
+  display: grid;
+  grid-auto-columns: 120px;
+  grid-auto-rows: 120px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    ". ."
+    "e1 e1"
+    "e1 e1"
+    "e2 e2"
+    "e2 e2"
+    "e3 e3"
+    "e3 e3"
+    "e4 e4"
+    "e4 e4";
+  gap: 1rem;
+  place-content: center;
+  overflow-y: scroll;
+}
+.educationCards .Ecard {
+  background-color: var(--bgButton);
+  padding: 2rem;
+  border-radius: 30px;
+  /* margin: 2rem; */
+  box-shadow: 2px 4px 4px 5px;
+}
+.disFlex {
+  display: flex;
+}
+.Edu1 {
+  grid-area: e1;
+}
+.Edu2 {
+  grid-area: e2;
+}
+.Edu3 {
+  grid-area: e3;
+}
+.Edu4 {
+  grid-area: e4;
+}
+
+.educationCards .Ecard {
+  h3 {
+    margin: 1rem;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+    color: var(--txtColor2);
+  }
+}
+/* end of Eduction */
+
+/* *******************         Expeirence          ********************** */
+.experience {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.experienceCards {
+  height: 60dvh;
+  width: 90%;
+  margin: 1rem auto;
+  border-radius: 30px;
+  background-color: var(--bgHome);
+  display: grid;
+  grid-auto-columns: 120px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    "ex1 ex1"
+    "ex2 ex2"
+    "ex3 ex3"
+    "ex4 ex4";
+  gap: 1rem;
+  place-content: center;
+  overflow-y: scroll;
+}
+.experienceCards .Excard {
+  background-color: var(--bgButton);
+  padding: 1rem;
+  border-radius: 30px;
+  box-shadow: 2px 4px 4px 5px;
+  h2 {
+    font-size: 20px;
+    color: var(--bgContent);
+    margin: 0;
+  }
+}
+.Excard img {
+  height: 25%;
+  width: 16%;
+  display: block;
+  margin-bottom: 1rem;
+}
+.exp1 {
+  grid-area: ex1;
+}
+.exp2 {
+  grid-area: ex2;
+}
+.exp3 {
+  grid-area: ex3;
+}
+.exp4 {
+  grid-area: ex4;
+}
+
+/* **************************             Media ************************** */
+
+@media (width> 1200px) {
+  #menu {
+    display: none;
+  }
+  main {
+    display: flex;
+  }
+  .head {
+    margin: 5rem;
+    margin-left: 10rem;
+  }
+
+  /* About me */
+  #aboutMe .about {
+    width: 700px;
+    /* background-color: antiquewhite; */
+    button[id="send"] {
+      margin-left: 12rem;
+    }
+  }
+
+  #aboutMe .myService {
+    width: 700px;
+  }
+
+  /* ****Eduction */
+  .education {
+    width: 700px;
+  }
+
+  .educationCards {
+    width: 600px;
+    place-content: inherit;
+  }
+  .educationCards .Ecard {
+    width: 500px;
+    padding: 1rem;
+  }
+
+  /* Experince */
+  .experience {
+    width: 700px;
+  }
+  .experienceCards {
+    width: 600px;
+  }
+  .experienceCards .Excard {
+    padding: 1rem;
+
+    margin: 2rem;
+    width: 500px;
+
+    height: 25vh;
+    h2 {
+      font-size: 20px;
+      color: var(--bgContent);
+      margin: 0;
+    }
+  }
+}
