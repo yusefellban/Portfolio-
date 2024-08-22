@@ -3,11 +3,11 @@ function validateName() {
 
   if (name.length < 2) {
     document.getElementById("errorMassage").innerText =
-      "*Error: The name must be at least 2 characters long.";
+      "Error: The name must be at least 2 characters long.";
     document.getElementById("fullName").style.border = "2px solid red";
   } else if (!isNaN(name)) {
     document.getElementById("errorMassage").innerText =
-      "*Error: The name cannot be a number.";
+      "Error: The name cannot be a number.";
     document.getElementById("fullName").style.border = "2px solid red";
   } else {
     document.getElementById("errorMassage").innerText = "";
@@ -25,7 +25,7 @@ function validateEmail() {
 
   if (!emailRegex.test(email)) {
     document.getElementById("errorEmail").innerText =
-      " * Error: Please enter a valid email address.";
+      " Error: Please enter a valid email address.";
     document.getElementById("emailAdress").style.border = "2px solid red";
   } else {
     document.getElementById("errorEmail").innerText = "";
@@ -38,10 +38,10 @@ function validateMobile() {
 
   if (isNaN(number)) {
     document.getElementById("errorMobile").innerText =
-      " * number must be a number";
+      " number must be a number";
     document.getElementById("mobile").style.border = "2px solid red";
   } else if (number < 200) {
-    document.getElementById("errorMobile").innerText = " * number not Accepted";
+    document.getElementById("errorMobile").innerText = "  number not Accepted";
     document.getElementById("mobile").style.border = "2px solid red";
   } else {
     document.getElementById("errorMobile").innerText = " ";
@@ -54,11 +54,11 @@ function validateSubject() {
 
   if (subject.length < 2) {
     document.getElementById("errorSubject").innerText =
-      "*Error: The subject must be at least 2 characters long.";
+      "Error: The subject must be at least 2 characters long.";
     document.getElementById("emailSubject").style.border = "2px solid red";
   } else if (!isNaN(subject)) {
     document.getElementById("errorSubject").innerText =
-      "*Error: The subject cannot be a number.";
+      "Error: The subject cannot be a number.";
     document.getElementById("emailSubject").style.border = "2px solid red";
   } else {
     document.getElementById("emailSubject").innerText = "";

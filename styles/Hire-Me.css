@@ -1,11 +1,12 @@
+/* Overwite the header disapear */
 header {
   position: sticky;
   top: -120px;
   z-index: 100;
   animation: headerAnim linear forwards;
   animation-timeline: scroll();
-  animation-range-start: 80vh;
-  animation-range-end: 80vh;
+  animation-range-start: 70vh;
+  /* animation-range-end: 80vh; */
 }
 
 @keyframes headerAnim {
@@ -58,13 +59,10 @@ span {
   font-size: 25px;
 }
 
-.head button {
+.head .contentButtons > button {
   width: 210px;
   margin: 0.5rem auto;
   height: 6vh;
-}
-.head button:hover {
-  background-color: var(--bgHome);
 }
 
 .head .contentButtons {
@@ -91,7 +89,6 @@ span {
 #skillsSection .skills {
   width: 290px;
   margin: 0 auto;
-
 }
 .skills {
   background-color: var(--bgHome);
@@ -103,7 +100,7 @@ span {
   grid-auto-rows: 130px;
   place-content: center;
   grid-template-areas:
-  ". ."
+    ". ."
     ". ."
     "s1 s2"
     "s3 s4"
@@ -213,17 +210,26 @@ span {
     color: var(--txtColor2);
     margin: 0.5rem auto;
   }
-
+  button {
+    background-color: var(--bgButton);
+    color: var(--bgContent);
+  }
   button:hover {
-    color: var(--bgButton);
-    background-color: var(--bgContent);
     transition: 0.7s;
-    box-shadow: 3px 3px 3px 3px;
+    box-shadow: 3px 3px 3px 3px black;
   }
   h4 {
     font-size: 17px;
-    width: 180px;
+    width: 187px;
   }
+}
+#aboutMe .services .button {
+  background-color: var(--bgButton);
+  color: var(--bgContent);
+}
+#aboutMe .services button:hover {
+  transition: 0.7s;
+  box-shadow: 3px 3px 3px 3px black;
 }
 
 /***** end of service*** */
@@ -278,7 +284,6 @@ span {
 .education {
   width: 290px;
   margin: 0 auto;
-
 }
 
 .educationCards {
@@ -346,7 +351,6 @@ span {
 .experience {
   width: 290px;
   margin: 0 auto;
-
 }
 
 .experienceCards {
@@ -412,11 +416,21 @@ span {
     margin: 5rem;
     margin-left: 10rem;
   }
+  /* Skills  */
+#skillsSection .skills {
+  width: 800px;
+}
+#skillsSection  .skills {
+  grid-auto-columns: 150px;
+  grid-auto-rows: 150px;
+  grid-template-areas:
+    "s1 s2 s5 s6"
+    "s3 s4 s7 s8";
 
+}
   /* About me */
   #aboutMe .about {
     width: 700px;
-    /* background-color: antiquewhite; */
     button[id="send"] {
       margin-left: 12rem;
     }
@@ -433,31 +447,44 @@ span {
 
   .educationCards {
     width: 600px;
-    place-content: inherit;
-  }
-  .educationCards .Ecard {
-    width: 500px;
-    padding: 1rem;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 120px;
+    grid-template-areas:
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      ". ."
+      "e1 e1"
+      "e1 e1"
+      "e2 e2"
+      "e2 e2"
+      "e3 e3"
+      "e3 e3"
+      "e4 e4"
+      "e4 e4";
   }
 
   /* Experince */
   .experience {
     width: 700px;
   }
-  .experienceCards {
-    width: 600px;
-  }
-  .experienceCards .Excard {
-    padding: 1rem;
 
-    margin: 2rem;
-    width: 500px;
 
-    height: 25vh;
-    h2 {
-      font-size: 20px;
-      color: var(--bgContent);
-      margin: 0;
-    }
-  }
+.experienceCards {
+  grid-auto-columns: 200px;
+  grid-auto-rows: 200px;
+  grid-template-areas:
+    ". ."
+    ". ."
+    "ex1 ex1"
+    "ex2 ex2"
+    "ex3 ex3"
+    "ex4 ex4";
+  gap: 1rem;
+  place-content: center;
+  overflow-y: scroll;
+}
+
+
 }
