@@ -28,6 +28,9 @@ img {
 body {
   overflow-x: hidden;
 }
+span{
+  color: blue;
+}
 
 ul li {
   list-style: none;

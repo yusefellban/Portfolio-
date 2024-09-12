@@ -17,6 +17,8 @@ header {
     border-radius: 1rem;
     background-color: #1a48709b;
     backdrop-filter: blur(7px);
+    border-radius: 0rem 0rem 1rem 1rem;
+
   }
 }
 
@@ -45,9 +47,7 @@ h2 {
   margin: 2rem auto;
   font-size: 25px;
 }
-span {
-  color: var(--txtColor2);
-}
+
 /* end Global */
 .head {
   width: 300px;
@@ -219,8 +219,9 @@ span {
     box-shadow: 3px 3px 3px 3px black;
   }
   h4 {
-    font-size: 15px;
-    width: 188.8px;
+    font-size: 16px;
+    width: 188px;
+    
   }
 }
 #aboutMe .services .button {
